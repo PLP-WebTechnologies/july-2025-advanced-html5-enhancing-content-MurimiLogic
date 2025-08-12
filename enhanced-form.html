@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced HTML5 Form</title>
+</head>
+<body>
+    <header>
+        <h1>PLP HTML5 Elements</h1>
+        <p>Advanced HTML5 features</p>
+    </header>
+
+    <main>
+        <article>
+            <h2>PLP Assignment</h2>
+            
+            <section>
+                <h3>Lists</h3>
+                <h4>List one</h4><!-- Unordered List -->
+                <ul>
+                    <li>Web apllications</li>
+                    <li>Python Features</li>
+                    <li>Native JavaScript</li>
+                    <li>Responsive design principles</li>
+                </ul>
+
+                <h4>List two</h4> <!-- Ordered List -->
+                <ol>
+                    <li>Personal information</li>
+                    <li>Preferences</li>
+                    <li>Entries</li>
+                    <li>Projects</li>
+                </ol>
+
+                <h4>Additional list</h4> <!-- Definition List -->
+                <dl>
+                    <dt>Blockchain</dt>
+                    <dd>The latest class in PLP</dd>
+                    <dt>Software Dev Basics</dt>
+                    <dd>The compulsory starting class of PLPAfrica.</dd>
+                </dl>
+            </section>
+
+            <section>
+                <h3>PLP Africa Classes</h3>
+                <table border="1">
+                    <caption>PLP Africa Major Classes</caption>
+                    <thead>
+                        <tr>
+                            <th>Class Name</th>
+                            <th>Description</th>
+                            <th>Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Software Dev Basics</td>
+                            <td>Introduction to programming and software development fundamentals</td>
+                            <td><code>Variables, Data Types, Control Structures</code></td>
+                        </tr>
+                        <tr>
+                            <td>Web Applications</td>
+                            <td>Building interactive websites using HTML, CSS, and JavaScript</td>
+                            <td><code>&lt;form&gt;, &lt;input&gt;, &lt;button&gt;</code></td>
+                        </tr>
+                        <tr>
+                            <td>Python Features</td>
+                            <td>Core Python programming concepts and libraries</td>
+                            <td><code>print(), for loop, import</code></td>
+                        </tr>
+                        <tr>
+                            <td>Blockchain</td>
+                            <td>Basics of blockchain technology and its applications</td>
+                            <td><code>Distributed Ledger, Smart Contracts</code></td>
+                        </tr>
+                        <tr>
+                            <td>Responsive Design</td>
+                            <td>Techniques for building mobile-friendly, responsive web pages</td>
+                            <td><code>@media queries, flexbox, grid</code></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section>
+                <h3>Media Section</h3>
+                <figure>
+                    <img src="https://plpafrica.com/assets/images/plp-logo.png" alt="Logo" width="600" height="400">
+                    <figcaption>Official logo</figcaption>
+                </figure>
+
+                <audio controls>
+                    <source src="https://traffic.libsyn.com/secure/techtalks/TechTalks_Episode1.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+
+                <iframe width="600" height="340" src="https://www.youtube.com/embed/_FAymyXoPCU" title="PLP Africa" frameborder="0" allowfullscreen></iframe>
+            </section>
+        </article>
+
+        <form id="plpAfricaForm" action="#" method="post" novalidate>
+            <fieldset>
+                <legend>Participant Information</legend>
+                <label for="participantName" class="required">Full Name:</label>
+                <input type="text" id="participantName" name="participantName" placeholder="Your Name" required minlength="2" maxlength="50" autocomplete="name"> <!--  use of placeholder and autocomplete -->
+                <label for="participantEmail" class="required">Email:</label>
+                <input type="email" id="participantEmail" name="participantEmail" placeholder="yourname@plpafrica.org" required autocomplete="email">
+                <label for="country">Country:</label>
+                <input type="text" id="country" name="country" placeholder="Kenya" required>
+                <label for="cohort">Cohort Year:</label>
+                <input type="number" id="cohort" name="cohort" min="2020" max="2025" step="1" placeholder="2025">
+                <label for="plpTrack">PLP Track:</label>
+                <select id="plpTrack" name="plpTrack">
+                    <option value="software">Software Development</option>
+                    <option value="data">Data Science</option>
+                    <option value="blockchain">Blockchain</option>
+                    <option value="ai">Artificial Intelligence</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Account Details</legend>
+                <label for="github">GitHub Username:</label>
+                <input type="text" id="github" name="github" placeholder="plpuser" required minlength="2" maxlength="39">
+                <label for="linkedin">LinkedIn Profile:</label>
+                <input type="url" id="linkedin" name="linkedin" placeholder="https://linkedin.com/in/plpuser">
+                <label for="portfolio">Portfolio Website:</label>
+                <input type="url" id="portfolio" name="portfolio" placeholder="https://plpuser.com">
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferences</legend>
+                <label>Preferred Learning Mode:</label>
+                <select id="learningMode" name="learningMode">
+                    <option value="online">Online</option>
+                    <option value="hybrid">Hybrid</option>
+                    <option value="inperson">In-Person</option>
+                </select>
+                <label>Interests:</label>
+                <div>
+                    <input type="checkbox" id="interestTech" name="interests" value="tech">
+                    <label for="interestTech">Technology</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="interestLeadership" name="interests" value="leadership">
+                    <label for="interestLeadership">Leadership</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="interestCommunity" name="interests" value="community">
+                    <label for="interestCommunity">Community</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="interestInnovation" name="interests" value="innovation">
+                    <label for="interestInnovation">Innovation</label>
+                </div>
+                <label>Preferred Contact Method:</label>
+                <div>
+                    <input type="radio" id="contactEmail" name="contactMethod" value="email" checked>
+                    <label for="contactEmail">Email</label>
+                </div>
+                <div>
+                    <input type="radio" id="contactPhone" name="contactMethod" value="phone">
+                    <label for="contactPhone">Phone</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Information</legend>
+                <label for="bio">Short Bio:</label>
+                <textarea id="bio" name="bio" rows="5" cols="50" placeholder="About your journey..." maxlength="500"></textarea>
+                <label for="avatar">Profile Picture:</label>
+                <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
+                <br>
+                <label for="reference">Ref ID:</label>
+                <input type="text" id="reference" name="reference" value="2025-08-12" readonly> <!-- Readonly field for reference ID -->
+                <label for="search">Search Resources:</label>
+                <input type="search" id="search" name="search" placeholder="Search...">
+                <label for="time">Preferred Contact Time:</label>
+                <input type="time" id="time" name="time" min="09:00" max="18:00">
+            </fieldset>
+
+            <button type="submit">Submit Form</button>
+            <button type="reset">Reset Form</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Enhanced HTML5 Form Assignment</p>
+        <address>
+            Contact: <a href="mailto:eliasmurimikenya@gmail.com">eliasmurimikenya@gmail.com</a>
+        </address>
+    </footer>
+</body>
+</html>
